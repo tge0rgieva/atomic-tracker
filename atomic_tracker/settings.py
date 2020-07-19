@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'atoms.apps.AtomsConfig'
+    'user_mgmt.apps.UserMgmtConfig',
+    'atom_mgmt.apps.AtomMgmtConfig',
+    'track_mgmt.apps.TrackMgmtConfig',
+    'notes_mgmt.apps.NotesMgmtConfig'
 ]
 
 MIDDLEWARE = [
@@ -77,7 +80,7 @@ WSGI_APPLICATION = 'atomic_tracker.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sakila',
+        'NAME': 'atomic_tracker',
         'USER': 'django_test',
         'PASSWORD': 'django_test_password',
         'OPTIONS': {
